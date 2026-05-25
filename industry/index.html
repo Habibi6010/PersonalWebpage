@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mostafa Habibi — AI/ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo">Mostafa Habibi</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#resume" class="nav-cta">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="top" class="hero">
+    <div class="container">
+      <h1>Mostafa Habibi Dehsheikhi</h1>
+      <p class="hero-title">AI/ML Engineer &amp; Researcher</p>
+      <p class="hero-tagline">Building intelligent systems at the intersection of computer vision, LLMs, and healthcare AI</p>
+      <div class="hero-links">
+        <a href="mailto:mostafa.habibi6010@gmail.com" class="icon-link">Email</a>
+        <a href="https://www.linkedin.com/in/mostafa-habibi-78b841284/" class="icon-link" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/habibi6010" class="icon-link" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.credly.com/users/mostafa-habibi-dehsheikhi/badges#credly" class="icon-link" target="_blank" rel="noopener">Credly</a>
+        <a href="assets/resume.pdf" class="btn-hero" download>Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section bg-surface">
+    <div class="container about-grid">
+      <div class="about-photo">
+        <img src="assets/photo.jpg" alt="Mostafa Habibi" width="180" height="180" onerror="this.src='assets/photo-placeholder.svg';this.onerror=null;">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I am an AI/ML engineer and researcher with 3+ years of hands-on experience building production-grade computer vision systems, LLM-powered pipelines, and cloud-connected AI applications. I specialize in designing and delivering end-to-end intelligent systems — from multi-camera tracking and object detection to agentic AI workflows and FHIR-compliant data pipelines.</p>
+        <p>Currently completing my Ph.D. at the University of Texas at Dallas, I have shipped AI systems used in real healthcare settings, published at top IEEE venues, and hold the AWS Certified AI Practitioner credential. I bring strong Python, PyTorch, and AWS skills alongside a practical engineering mindset focused on results.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-groups">
+        <div class="skill-group">
+          <h3>AI, ML &amp; Computer Vision</h3>
+          <div class="skill-tags">
+            <span>Computer Vision</span><span>Deep Learning</span><span>Object Detection</span>
+            <span>YOLO</span><span>MediaPipe</span><span>OpenCV</span><span>PyTorch</span>
+            <span>3D Localization</span><span>Multi-Camera Tracking</span><span>Image Enhancement</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>LLMs &amp; Agentic Systems</h3>
+          <div class="skill-tags">
+            <span>LLMs</span><span>RAG</span><span>Agentic AI</span><span>Multi-Agent Systems</span>
+            <span>LangChain</span><span>LangGraph</span><span>Prompt Engineering</span>
+            <span>n8n</span><span>Workflow Automation</span><span>Tool Calling</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Programming &amp; Frameworks</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>Java</span><span>C/C++</span><span>JavaScript</span>
+            <span>SQL</span><span>Flask</span><span>scikit-learn</span><span>pandas</span>
+            <span>NumPy</span><span>MATLAB</span><span>Bash</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Cloud &amp; Data</h3>
+          <div class="skill-tags">
+            <span>AWS EC2</span><span>AWS S3</span><span>AWS Lambda</span><span>API Gateway</span>
+            <span>Cloud Deployment</span><span>Data Pipelines</span><span>SQL Server</span>
+            <span>Schema Design</span><span>EER Modeling</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Networking &amp; Hardware</h3>
+          <div class="skill-tags">
+            <span>CCNA</span><span>TCP/IP</span><span>Windows Server</span><span>CompTIA A+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section bg-surface">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Dual-Camera Behavioral Assessment Platform</h3>
+          <div class="tech-tags"><span>YOLO</span><span>DeepFace</span><span>SIFT</span><span>Epipolar Geometry</span><span>Python</span></div>
+          <p>Designed a dual-camera system integrating YOLO, DeepFace, SIFT-based matching, and triangulation for robust patient tracking and human–object interaction analysis in clinical environments.</p>
+        </div>
+        <div class="project-card">
+          <h3>Agentic FHIR Clinical Data Pipeline</h3>
+          <div class="tech-tags"><span>LangGraph</span><span>LangChain</span><span>LLMs</span><span>FHIR</span><span>Python</span></div>
+          <p>Built a multi-agent AI platform that converts unstructured clinical notes into standardized, queryable FHIR-compliant structured data using adaptive auditing and locally deployed open-weight LLMs.</p>
+        </div>
+        <div class="project-card">
+          <h3>AI Sports Analytics System</h3>
+          <div class="tech-tags"><span>MediaPipe</span><span>Random Forest</span><span>PCA</span><span>FFT</span><span>PyTorch</span></div>
+          <p>Developed AI-based performance analysis for track and field athletes — posture classification, kinematic analysis, and performance ranking using landmark extraction and ART2 clustering.</p>
+        </div>
+        <div class="project-card">
+          <h3>Vision-Language Patient Monitoring System</h3>
+          <div class="tech-tags"><span>YOLO</span><span>LLMs</span><span>Flask</span><span>AWS</span><span>Python</span></div>
+          <p>Built scalable vision-language systems combining computer vision outputs with LLM summarization to generate clinically relevant patient behavior reports for caregivers, deployed on AWS.</p>
+        </div>
+        <div class="project-card">
+          <h3>Illumination-Aware Object Detection</h3>
+          <div class="tech-tags"><span>PyTorch</span><span>Deep Learning</span><span>OpenCV</span><span>YOLO</span></div>
+          <p>Designed and evaluated an integrated deep learning architecture for robust object detection under challenging low-light conditions, published at IEEE SSIAI 2026.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Graduate Research Assistant</h3>
+                <p class="timeline-org">University of Texas at Dallas, Richardson, TX</p>
+              </div>
+              <span class="timeline-date">Spring 2023 – Present</span>
+            </div>
+            <ul>
+              <li>Led healthcare AI projects using YOLO, MediaPipe, monocular depth estimation, and multi-camera 3D localization.</li>
+              <li>Built an agentic AI platform for converting clinical notes to FHIR-compliant structured data using LangChain and LangGraph.</li>
+              <li>Developed cloud-connected AI workflows on AWS EC2, S3, Lambda, and API Gateway.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Teaching Assistant</h3>
+                <p class="timeline-org">University of Texas at Dallas, Richardson, TX</p>
+              </div>
+              <span class="timeline-date">5 Semesters</span>
+            </div>
+            <ul>
+              <li>Assisted with Introduction to ECE and Introduction to Digital Systems.</li>
+              <li>Provided lab support, grading, and office hours for undergraduate students.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Research Assistant</h3>
+                <p class="timeline-org">Shahid Bahonar University, Kerman, Iran</p>
+              </div>
+              <span class="timeline-date">Aug 2013 – Aug 2015</span>
+            </div>
+            <ul>
+              <li>Conducted research in mobile ad hoc networks (MANETs) and routing algorithms.</li>
+              <li>Fully funded by the Ministry of Science, Research, and Technology.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="section bg-surface">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="certs-grid">
+        <a href="#" class="cert-badge" target="_blank" rel="noopener">
+          <div class="cert-logo cert-logo-aws">AWS</div>
+          <span>AWS Certified AI Practitioner</span>
+        </a>
+        <a href="#" class="cert-badge" target="_blank" rel="noopener">
+          <div class="cert-logo cert-logo-coursera">C</div>
+          <span>Introduction to Generative AI Learning Path</span>
+        </a>
+        <a href="#" class="cert-badge" target="_blank" rel="noopener">
+          <div class="cert-logo cert-logo-coursera">C</div>
+          <span>IBM Data Science Professional Certificate</span>
+        </a>
+        <a href="#" class="cert-badge" target="_blank" rel="noopener">
+          <div class="cert-logo cert-logo-coursera">C</div>
+          <span>Introduction to Data Science</span>
+        </a>
+        <a href="#" class="cert-badge" target="_blank" rel="noopener">
+          <div class="cert-logo cert-logo-coursera">C</div>
+          <span>Multi-Agent Systems with LangGraph</span>
+        </a>
+        <a href="#" class="cert-badge" target="_blank" rel="noopener">
+          <div class="cert-logo cert-logo-datacamp">DC</div>
+          <span>Understanding Prompt Engineering</span>
+        </a>
+        <a href="#" class="cert-badge" target="_blank" rel="noopener">
+          <div class="cert-logo cert-logo-datacamp">DC</div>
+          <span>Introduction to AI Agents</span>
+        </a>
+        <a href="#" class="cert-badge" target="_blank" rel="noopener">
+          <div class="cert-logo cert-logo-datacamp">DC</div>
+          <span>Building Scalable Agentic Systems</span>
+        </a>
+        <a href="#" class="cert-badge" target="_blank" rel="noopener">
+          <div class="cert-logo cert-logo-datacamp">DC</div>
+          <span>Building AI Agents with Google ADK</span>
+        </a>
+        <a href="#" class="cert-badge" target="_blank" rel="noopener">
+          <div class="cert-logo cert-logo-datacamp">DC</div>
+          <span>Introduction to Generative AI (DataCamp)</span>
+        </a>
+      </div>
+      <p class="certs-note">Replace each <code>href="#"</code> with the individual credential URL once available.</p>
+    </div>
+  </section>
+
+  <section id="resume" class="section download-section">
+    <div class="container text-center">
+      <h2>Resume</h2>
+      <p>Download my one-page resume as a PDF.</p>
+      <a href="assets/resume.pdf" class="btn-download" download>Download Resume (PDF)</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Mostafa Habibi Dehsheikhi &middot; <a href="mailto:mostafa.habibi6010@gmail.com">mostafa.habibi6010@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

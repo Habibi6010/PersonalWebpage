@@ -1,0 +1,257 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+\linespread{.94} % Add this line to adjust line spacing
+%\documentclass[10pt]{moderncv}
+%----------FONT OPTIONS----------
+% sans-serif
+%\usepackage[sfdefault]{FiraSans}
+%\usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+\usepackage[utf8]{inputenc}
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+\moderncvstyle{banking}
+\moderncvcolor{black}
+\nopagenumbers{}
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e}
+\usepackage[scale=0.915]{geometry} %[scale=0.915
+\geometry{left=2cm, top=2cm, right=2cm, bottom=2cm, footskip=.5cm}
+\usepackage{import}
+\usepackage{multicol}
+\usepackage{import}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{tabularx}
+% \usepackage{hyperref}  % For hyperlinks
+\name{Mostafa}{Habibi Dehsheikhi}
+
+
+\newcommand*{\customcventry}[7][.13em]{
+\begin{tabular}{@{}l}
+{\bfseries #4} \
+{\itshape #3}
+\end{tabular}
+\hfill
+\begin{tabular}{l@{}}
+{\bfseries #5} \
+{\itshape #2}
+\end{tabular}
+\ifx&#7&%
+\else{\
+\begin{minipage}{\maincolumnwidth}%
+\small#7%
+\end{minipage}}\fi%
+\par\addvspace{#1}}
+\begin{document}
+\makecvtitle
+\vspace*{-10mm}
+%\begin{center}\textbf{ Digital Marketer and Business Analyser}\end{center}
+\begin{center}
+\Large \textbf{Ph.D. Student at the University of Texas at Dallas}
+
+\small{F-1 (Green Card and EAD processing)}
+
+
+\enspace Dallas, TX | C: \enspace +1 (214) 928-0535 | 
+\enspace \href{mailto:mxh220053@utdallas.edu}{\color{blue} mxh220053@utdallas.edu} | 
+\enspace \href{https://www.linkedin.com/in/mostafa-habibi-78b841284/}{\color{blue} LinkedIn} | 
+\enspace \href{https://scholar.google.com/citations?user=dHXIkhMAAAAJ&hl=en}{\color{blue} Google Scholar} | 
+\enspace \href{https://www.credly.com/users/mostafa-habibi-dehsheikhi/badges#credly}{\color{blue} Credly} | 
+\enspace \href{https://habibi6010.github.io/}{\color{blue} Personal Website}
+
+\end{center}
+\vspace*{-7mm}
+%----------------------------------------------------------------------------------------
+% PROFESSIONAL SUMMARY
+%----------------------------------------------------------------------------------------
+\section{KEY QUALIFICATIONS}
+{\begin{itemize}[leftmargin=0.35cm, label={\textbullet}, itemsep=0.3em, parsep=0pt]
+\item Ph.D. Candidate in Computer Engineering specializing in AI, computer vision, machine learning, large language models, and data-driven system development.
+\item $2^+$ years of experience working with AWS services, including EC2, S3, Lambda, and API Gateway, for building and deploying scalable cloud-based solutions.
+\item $3^+$ years of experience building intelligent systems for video analysis, object detection, patient monitoring, and healthcare-focused AI applications.
+\item Strong expertise in Python, PyTorch, OpenCV, YOLO, SQL, and machine learning workflows for developing, testing, evaluating, and deploying AI models.
+\item Experienced in designing end-to-end computer vision pipelines, including image analysis, activity recognition, 3D tracking, stereo vision,  and multi-camera systems.
+\item Hands-on experience with LLM-based applications, including retrieval-augmented generation (RAG), agentic AI systems, and multi-agent workflows using LangChain and LangGraph.
+\item Skilled in designing AI workflows and automation pipelines using n8n for integrating tools, decision logic, and intelligent task orchestration.
+\item Proven ability in research, complex data analysis, model optimization, problem solving, algorithm design, experimental validation, and interdisciplinary collaboration to develop practical and scalable AI solutions.
+\end{itemize}}
+
+\vspace*{-6mm}
+%----------------------------------------------------------------------------------------
+% EXPERIENCE
+%----------------------------------------------------------------------------------------
+%%%%  UTD and Virginia Tech
+% \textbf{Research Assistant} {\color{blue} \textit {\href{https://personal.utdallas.edu/~bilal.akin/}{(Power Electronic Lab)}}} \hfill \textbf{University of Texas at Dallas, TX, USA} \textit {Jan 2021 ‐ Expected Dec 2024}\\
+% \textbf{System Engineer Intern} {\color{blue} \textit {\href{https://www.ti.com/}{(Kilby Labs)}}} \hfill \textbf{Texas Instruments, Dallas, TX, USA} \textit {May 2024 ‐ Aug 2024}\\
+% \textbf{Software Developer Engineer Intern} {\color{blue} \textit {\href{https://www.toshiba.com/tic/}{(TIC ATD)}}} \hfill \textbf{Toshiba International Corporation, Houston, TX, USA} \textit {May 2022 ‐ Jan 2023}\\
+% \textbf{Research Assistant} {\color{blue} \textit {\href{https://www.unr.edu/ebme/people/mehdi-etezadi-amoli}{(Power System Analysis Lab)}}} \hfill \textbf{University of Nevada Reno, NV, USA} \textit {Jan 2020 ‐ Dec 2021}\\
+% \textbf{Research Assistant} {\color{blue} \textit {\href{https://mebrahim.iut.ac.ir/electrical-drive-laboratory}{(Electrical Drive Lab)}}} \hfill \textbf{Isfahan University of Technology, Isfahan, Iran} \textit {Jan 2015 ‐ Aug 2017}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{EXPERIENCE}
+
+\begin{itemize}[leftmargin=0.0 cm, label={}]
+
+    \item \textbf{Graduate Research Assistant, \textit{University of Texas at Dallas, Richardson, TX}} \hfill \textit{Spring 2023 -- Present}
+    \begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+        \item Led AI-driven healthcare monitoring projects for patient ambulation assessment, posture recognition, behavioral analysis, and human--object interaction using YOLO, MediaPipe, Random Forest, monocular depth estimation, and multi-camera 3D localization.
+        \item Developed scalable vision-language systems that combine computer vision outputs with LLM-based summarization to generate clinically relevant patient behavior reports for caregivers.
+        \item Designed a dual-camera behavioral assessment platform integrating YOLO, DeepFace, SIFT-based matching, epipolar geometry, and triangulation for robust tracking and interaction analysis in healthcare environments.
+        \item Built an agentic AI platform for converting unstructured clinical notes into standardized, queryable, FHIR-compliant structured data using multi-agent workflows, adaptive auditing, schema evolution, and locally deployed open-weight LLMs.
+        \item Implemented LLM and multi-agent orchestration pipelines using LangChain and LangGraph. 
+        % for schema discovery, extraction, auditing, and structured information conversion.
+        \item Developed AI-based sports analytics systems for runner posture classification, kinematic analysis, and performance ranking. 
+        % using MediaPipe landmark extraction, feature engineering, Random Forest, PCA, FFT-based trend analysis, and ART2 clustering.
+        \item Conducted machine learning and deep learning research in low-light object detection, MRI-based radiogenomic classification, and contrast-free feature reconstruction.
+        % using PyTorch, 3D U-Net architectures, and classical ML classifiers.
+        \item Developed cloud-connected and data-driven AI workflows using AWS services. 
+        % such as EC2, S3, Lambda, and API Gateway for storage, processing, deployment, and application integration.
+    \end{itemize}
+
+    \item \textbf{Teaching Assistant, \textit{University of Texas at Dallas, Richardson, TX}} \hfill \textit{5 Semesters}
+    \begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+        \item Assisted with \textit{Introduction to Electrical and Computer Engineering} and \textit{Introduction to Digital Systems} through lab support, grading, office hours, assignment guidance, and technical troubleshooting.
+        \item Helped students understand core engineering and programming concepts, solve implementation issues, and complete coursework successfully.
+    \end{itemize}
+
+    \item \textbf{Selected Academic Projects}
+    \begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+        \item Designed and implemented a relational database project using EER modeling, schema design, normalization, SQL, constraints, and view development.
+        \item Designed AI workflow automation pipelines using n8n for multi-step orchestration and tool integration.
+    \end{itemize}
+    
+    \item \textbf{Research Assistant, \textit{Shahid Bahonar University, Kerman, Iran}} \hfill \textit{Aug 2013 -- Aug 2015}
+    \begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+        \item Conducted research in computer science focused on mobile ad hoc networks (MANETs), routing algorithms, and intelligent systems.
+        \item Fully funded by the Ministry of Science, Research, and Technology.
+    \end{itemize}
+\end{itemize}
+
+\vspace*{-3mm}
+
+%----------------------------------------------------------------------------------------
+% SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{SKILLS}
+
+{\textbf{AI, Machine Learning, and Computer Vision:}
+Computer vision, deep learning, machine learning, object detection, image enhancement, low-light vision, posture classification, activity recognition, human--object interaction detection, 3D localization, stereo vision, multi-camera tracking, vision-language systems, model development, evaluation, and optimization.
+}\\[5pt]
+{\textbf{LLM and Agentic Systems:}
+LLMs, RAG, agentic AI, multi-agent systems, prompt engineering, structured data extraction, LangChain, LangGraph, n8n, workflow automation, orchestration pipelines, tool calling, and intelligent decision workflows.
+}\\[5pt]
+{\textbf{Programming, Libraries, and Frameworks:}
+Python, Java, C/C++, HTML, CSS, JavaScript, SQL, SQL Server, PyTorch, OpenCV, YOLO, MediaPipe, DeepFace, Flask, MATLAB, Bash, pandas, NumPy, scikit-learn, matplotlib, and LaTeX.
+}\\[5pt]
+{\textbf{Cloud, Databases, and Data Systems:}
+AWS EC2, S3, Lambda, API Gateway, cloud deployment, data pipelines, relational databases, EER modeling, schema design, normalization, SQL query development, constraints, referential integrity, and data integration.
+}\\[5pt]
+{\textbf{Analytics, Algorithms, and Research:}
+Feature engineering, PCA, clustering, Random Forest, SVM, ranking models, optimization, algorithm design, experimental validation, technical communication, problem solving, and interdisciplinary research collaboration.
+}\\[5pt]
+{\textbf{Computer Networking and Hardware:}
+CCNA, TCP/IP, Windows server, and CompTIA A+.
+}
+
+\vspace*{-3mm}
+%----------------------------------------------------------------------------------------
+% EDUCATION
+%----------------------------------------------------------------------------------------
+\section{EDUCATION}
+
+{\textbf{Ph.D. Candidate, Computer Engineering} \hfill \textit{Present}\\
+The University of Texas at Dallas, Richardson, TX, USA \hfill GPA: 3.94/4.00\\[1pt]
+Research: AI-powered video monitoring, computer vision, argentic AI, and healthcare analytics.\\[1pt]
+Relevant Coursework: Database Design, Virtual Reality, Machine Learning and Pattern Recognition, Computer Vision.
+}\\[5pt]
+{\textbf{Master of Science, Computer Science} \hfill \textit{Aug 2015}\\
+Shahid Bahonar University, Kerman, Iran \hfill GPA: 3.60/4.00\\[1pt]
+Thesis: \textit{Bee-Hopnet Routing Algorithm in Mobile Ad Hoc Networks (MANETs).}\\[1pt]
+% Fully funded by the Ministry of Science, Research, and Technology.\\[1pt]
+Relevant Coursework: Advanced AI, Image Processing, Machine Learning, Logic Programming, Issues in Smart Systems, Theory of Computer Sciences.
+}\\[5pt]
+{\textbf{Bachelor of Science, Computer Science} \hfill \textit{Aug 2012}\\
+Shahid Bahonar University, Kerman, Iran \hfill GPA: 3.46/4.00\\[1pt]
+Ranked 1st in the Computer Science Department.\\[1pt]
+Achieved 4th place in the ACM Programming Competition, Shahid Beheshti University, Tehran, 2011.\\[1pt]
+Project: Design, Development, and Implementation of a Finance and Human Resource System deployed in Java.
+}
+
+\vspace*{-3mm}
+%----------------------------------------------------------------------------------------
+% CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+\section{CERTIFICATIONS}
+
+\begin{itemize}[leftmargin=0.35cm, label={\textbullet}, itemsep=0.3em, parsep=0pt]
+    \item \textbf{AI and Agentic Systems:} Understanding Prompt Engineering; Introduction to AI Agents; Building Scalable Agentic Systems; Multi-Agent Systems with LangGraph; Building AI Agents with Google ADK (DataCamp).
+\item \textbf{Generative AI:} Introduction to Generative AI Learning Path (Coursera / Google Cloud). AWS Certified AI Practitioner (Amazon)
+    \item \textbf{Data Science:} IBM Data Science Professional Certificate; Introduction to Data Science (Coursera / IBM).
+    \item \textbf{Technical and Vocational Certifications:} CCNA; Fundamentals of Robotics; Java.
+\end{itemize}
+
+\vspace*{-6mm}
+%----------------------------------------------------------------------------------------
+% AWARDS
+%----------------------------------------------------------------------------------------
+\section{AWARDS}
+\begin{itemize}[leftmargin=0.35cm, label={\textbullet}, itemsep=0.3em, parsep=0pt]
+    
+    
+    \item \textbf{ECE Doctoral Excellence Award, The University of Texas at Dallas} \hfill \textit{Spring 2026}\\
+    Awarded in recognition of academic and research excellence by the Department of Electrical and Computer Engineering.
+
+    \item \textbf{IEEE Best Paper Award, ICHI 2025} \hfill \textit{June 2025}\\
+    Awarded for the paper \textit{Video-Based Human-Object Interaction Analysis for Patient Behavioral Monitoring} at the 13th IEEE International Conference on Healthcare Informatics, Rende, Italy.
+\end{itemize}
+
+\vspace*{-6mm}
+%----------------------------------------------------------------------------------------
+% PROFESSIONAL MEMBERSHIP \& SERVICE
+%----------------------------------------------------------------------------------------
+\section{PROFESSIONAL MEMBERSHIP \& SERVICE}
+
+\begin{itemize}[leftmargin=0.35cm, label={\textbullet}, itemsep=0.3em, parsep=0pt]
+    \item IEEE, IEEE Young Professionals
+    \item IEEE Engineering in Medicine and Biology Society (EMBS)
+    \item Reviewer, IEEE Southwest Symposium on Image Analysis and Interpretation (SSIAI)
+    \item Reviewer, IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI)
+\end{itemize}
+
+\vspace*{-6mm}
+%----------------------------------------------------------------------------------------
+% Publications
+%----------------------------------------------------------------------------------------
+
+\section{Selected Publications}
+\begin{enumerate}
+
+    \item \textbf{M. Habibi} and M. Nourani, ``Agentic AI to Augment Unstructured Data for Information Exchange and LLM,'' \textit{IEEE Journal of Biomedical and Health Informatics (JBHI)}, 2026. (Manuscript under review)
+
+    \item F. Parsaee, M. C. Stefan, and \textbf{M. Habibi}, ``Reconstruction of T1-Weighted Contrast-Enhanced MRI for Glioblastoma Radiogenomic Classification,'' \textit{IEEE Engineering in Medicine and Biology Society (EMBC)}, 2026. (Submitted)
+
+    \item \textbf{M. Habibi} and M. Nourani, ``An Integrated Deep Learning Architecture for Illumination-Aware Object Detection,'' \textit{IEEE Southwest Symposium on Image Analysis and Interpretation (SSIAI)}, Santa Fe, New Mexico, USA, March 22-24, 2026.
+
+    \item \textbf{M. Habibi}, M. Nourani, and M. M. Nourani, ``AI-Based Performance Analysis for Track and Field Athletes,'' in \textit{47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)}, Copenhagen, Denmark, July 14--17, 2025.
+
+    \item \textbf{M. Habibi} and M. Nourani, ``Utilizing Generative AI for Patient Behavioral Assessment,'' in \textit{2025 IEEE 18th Dallas Circuits and Systems Conference (DCAS)}, 2025, pp. 1--2.
+
+    \item \textbf{M. Habibi}, Z. Delaram, M. Nourani, and D. H. Sullivan, ``Video-Based Human-Object Interaction Analysis for Patient Behavioral Monitoring,'' in \textit{2025 IEEE 13th International Conference on Healthcare Informatics (ICHI)}, Rende, Italy, 2025. (Best Paper Award)
+
+    \item \textbf{M. Habibi}, M. Nourani, and D. H. Sullivan, ``A Scalable Dual-Camera Platform for Behavioral Assessment in Healthcare,'' \textit{Journal of Healthcare Informatics Research (JHIR)}, 2025. (Manuscript submitted for publication)
+
+    \item \textbf{M. Habibi}, M. Nourani, and D. H. Sullivan, ``An AI-Driven Camera-Based Platform for Patient Ambulation Assessment,'' in \textit{2024 46th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)}, 2024, pp. 1--4.
+
+    \item \textbf{M. Habibi}, M. Nourani, and M. M. Nourani, ``AI-Based Kinematic Analysis for Track Athletes,'' in \textit{2024 IEEE International Conference on Smart Computing (SMARTCOMP)}, Osaka, Japan, 2024, pp. 338--343.
+
+    \item \textbf{M. Habibi}, Z. Delaram, and M. Kouchaki, ``HOPNET Enhanced Routing Protocol Using Bee Colony (Bee-HOPNET),'' in \textit{18th International Conference on Recent Research in Science and Technology}, Dec. 16, 2019.
+
+\end{enumerate}
+
+\end{document}
